@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book a Parking Slot"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parking Station Name"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:id="@+id/parkingstationname">
+
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Parking Slots"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_margin="10dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:id="@+id/totalparkingslots"
+                        android:layout_margin="10dp"
+                        android:inputType="numberDecimal">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layoutParkingSlots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
